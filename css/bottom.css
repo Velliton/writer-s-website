@@ -1,0 +1,52 @@
+.main__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.main__description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  position: relative;
+  top: -115px;
+}
+
+.main__tickets {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.description__slider .slick-track {
+  display: block;
+}
+
+.description__slider__item {
+  padding: 50px;
+  background-color: #fff;
+}
+
+.description__slider .slick-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 548px;
+  height: 245px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.main__tickets__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 35px;
+}
