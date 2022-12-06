@@ -20,7 +20,7 @@
         width: 100%;
     }
     
-    .body.lock {
+    body.lock {
         overflow: hidden;
     }
     
@@ -200,6 +200,9 @@
     }
     
     @media screen and (max-width: 991px) {
+        .body.lock {
+            overflow: hidden;
+        }
         .container {
             max-width: 900px;
         }
@@ -216,7 +219,7 @@
                 position: relative;
                 width: 20px;
                 height: 20px;
-                z-index: 2;
+                z-index: 1001;
                 span {
                     position: absolute;
                     background-color: #A95508;
@@ -333,11 +336,11 @@
                 left: -100%;
                 width: 100%;
                 height: 100%;
-                background-color: #fff;
+                background-color: #F6F3EA;
                 padding: 70px 10px 20px 10px;
                 transition: all 0.3s ease 0s;
                 overflow: auto;
-                z-index: 1;
+                z-index: 1000;
                 margin-right: initial;
                 &.active {
                     left: 0%;
@@ -440,5 +443,9 @@
                     }
                 }
             }
+        }
+        .btn {
+            width: 100%;
+            text-align: center;
         }
     }
