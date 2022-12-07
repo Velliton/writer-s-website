@@ -973,10 +973,8 @@ input::-webkit-search-results-decoration {
     height: 378px;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 50% 40%;
-       object-position: 50% 40%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -o-object-position: 40% 40%;
+       object-position: 40% 40%;
   }
   .slider .slick-track {
     display: -webkit-box;
