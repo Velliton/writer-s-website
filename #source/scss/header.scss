@@ -324,7 +324,7 @@
         max-width: 520px;
     }
     .header {
-        margin: 0px auto 60px auto;
+        margin: 0px auto 0px auto;
         &__bottom {
             display: flex;
             justify-content: space-between;
@@ -339,6 +339,11 @@
         }
         &__nav {
             margin-left: 0px;
+        }
+        &__right {
+            &__top {
+                margin-bottom: 50px;
+            }
         }
         &__social {
             margin-top: 0px;

@@ -501,7 +501,7 @@ input::-webkit-search-results-decoration {
     max-width: 520px;
   }
   .header {
-    margin: 0px auto 60px auto;
+    margin: 0px auto 0px auto;
   }
   .header__bottom {
     display: -webkit-box;
@@ -525,6 +525,9 @@ input::-webkit-search-results-decoration {
   }
   .header__nav {
     margin-left: 0px;
+  }
+  .header__right__top {
+    margin-bottom: 50px;
   }
   .header__social {
     margin-top: 0px;
@@ -1098,7 +1101,7 @@ main {
 
 @media screen and (max-width: 576px) {
   .btn {
-    width: 100%;
+    width: 80%;
     text-align: center;
   }
 }
