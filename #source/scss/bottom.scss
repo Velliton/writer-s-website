@@ -152,6 +152,9 @@
     }
     
     @media screen and (max-width: 365px) {
+        .main__description {
+            margin-bottom: 50px;
+        }
         .description__slider .slick-list {
             align-items: center;
             max-width: 350px;
@@ -160,5 +163,12 @@
             line-height: 28px;
             z-index: 2;
             overflow: hidden;
+        }
+        .main__tickets__text {
+            line-height: 28.8px;
+            margin-bottom: 25px;
+        }
+        .main__bottom {
+            margin-bottom: 50px;
         }
     }

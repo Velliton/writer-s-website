@@ -260,12 +260,6 @@ input::-webkit-search-results-decoration {
     margin-right: 20px;
   }
   .header__right__top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-bottom: 80px;
   }
   .header__punktir {
@@ -744,6 +738,9 @@ input::-webkit-search-results-decoration {
   }
 }
 @media screen and (max-width: 365px) {
+  .main__description {
+    margin-bottom: 50px;
+  }
   .description__slider .slick-list {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -754,6 +751,13 @@ input::-webkit-search-results-decoration {
     line-height: 28px;
     z-index: 2;
     overflow: hidden;
+  }
+  .main__tickets__text {
+    line-height: 28.8px;
+    margin-bottom: 25px;
+  }
+  .main__bottom {
+    margin-bottom: 50px;
   }
 }
 .slider {
@@ -795,8 +799,7 @@ input::-webkit-search-results-decoration {
   display: -ms-flexbox;
   display: flex;
 }
-
-.slick-list {
+.slider .slick-list {
   overflow: hidden;
 }
 
@@ -836,20 +839,22 @@ input::-webkit-search-results-decoration {
   left: 14%;
   z-index: 6;
 }
-
 .dots .slick-dots li {
   list-style: none;
   margin: 0 12px;
 }
 
+.dots .slick-dots li.slick-active button {
+  background-color: #fff;
+}
 .dots .slick-dots li.slick-active button::after {
   content: "";
   position: relative;
   left: -9px;
   bottom: -11px;
   border: 5px solid transparent;
-  border-left: 5px solid #F1ECDF;
-  border-top: 5px solid #F1ECDF;
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
 }
 
 .dots .slick-dots button {
@@ -1040,6 +1045,9 @@ body {
   background-color: #F1ECDF;
   font-family: "bitter", sans-serif;
 }
+body.lock {
+  overflow: hidden;
+}
 
 .container {
   max-width: 1345px;
@@ -1052,10 +1060,6 @@ body {
   min-height: 100%;
   overflow: hidden;
   margin: 0 auto;
-}
-
-body.lock {
-  overflow: hidden;
 }
 
 main {
@@ -1101,17 +1105,13 @@ main {
   .container {
     max-width: 520px;
   }
-  .btn {
-    width: 80%;
-    text-align: center;
-  }
 }
 @media screen and (max-width: 365px) {
   .container {
     max-width: 310px;
   }
   .btn {
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 }

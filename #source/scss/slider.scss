@@ -33,10 +33,9 @@
     & .slick-track {
         display: flex;
     }
-}
-
-.slick-list {
-    overflow: hidden;
+    & .slick-list {
+        overflow: hidden;
+    }
 }
 
 .arrows .slick-arrow {
@@ -68,21 +67,23 @@
     top: -2%;
     left: 14%;
     z-index: 6;
+    li {
+        list-style: none;
+        margin: 0 12px;
+    }
 }
 
-.dots .slick-dots li {
-    list-style: none;
-    margin: 0 12px;
-}
-
-.dots .slick-dots li.slick-active button::after {
-    content: '';
-    position: relative;
-    left: -9px;
-    bottom: -11px;
-    border: 5px solid transparent;
-    border-left: 5px solid #F1ECDF;
-    border-top: 5px solid #F1ECDF;
+.dots .slick-dots li.slick-active button {
+    background-color: #fff;
+    &::after {
+        content: '';
+        position: relative;
+        left: -9px;
+        bottom: -11px;
+        border: 5px solid transparent;
+        border-left: 5px solid #fff;
+        border-top: 5px solid #fff;
+    }
 }
 
 .dots .slick-dots button {
