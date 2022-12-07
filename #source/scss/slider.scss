@@ -1,12 +1,13 @@
 .slider {
     &__main {
         position: relative;
-        margin-bottom: 0px;
+        margin-bottom: 87px;
     }
     position: relative;
     width: 100%;
     height: auto;
     z-index: 0;
+    overflow: hidden;
     transition: opacity 2000s ease-in-out;
     opacity: 1;
     &__item {
@@ -154,7 +155,7 @@
     .dots .slick-dots {
         top: -4%;
         left: 13%;
-        z-index: 4;
+        z-index: 6;
     }
     .dots .slick-dots li {
         list-style: none;
@@ -245,7 +246,7 @@
         position: absolute;
         top: -2%;
         left: 13%;
-        z-index: 4;
+        z-index: 6;
     }
     .dots .slick-dots li {
         list-style: none;

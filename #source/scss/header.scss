@@ -108,9 +108,6 @@
 }
 
 @media screen and (max-width: 1250px) {
-    .container {
-        max-width: 1200px;
-    }
     .header {
         margin: 0px auto 50px auto;
         &__lang {
@@ -145,9 +142,6 @@
 }
 
 @media screen and (max-width: 991px) {
-    .container {
-        max-width: 900px;
-    }
     .header {
         &__nav {
             display: flex;
@@ -320,11 +314,8 @@
 }
 
 @media screen and (max-width: 576px) {
-    .container {
-        max-width: 520px;
-    }
     .header {
-        margin: 0px auto 0px auto;
+        margin: 0px auto 50px auto;
         &__bottom {
             display: flex;
             justify-content: space-between;
@@ -340,11 +331,6 @@
         &__nav {
             margin-left: 0px;
         }
-        &__right {
-            &__top {
-                margin-bottom: 50px;
-            }
-        }
         &__social {
             margin-top: 0px;
             display: flex;
@@ -354,13 +340,15 @@
                 margin-bottom: 20px;
             }
         }
+        &__right {
+            &__top {
+                margin-bottom: 0px;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 365px) {
-    .container {
-        max-width: 310px;
-    }
     .header {
         margin: 0px auto 40px auto;
         &__lang {
