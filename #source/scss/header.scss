@@ -10,6 +10,7 @@
         display: none;
     }
     &__lang {
+        cursor: pointer;
         display: flex;
         margin-bottom: 72px;
         &__item {
@@ -191,6 +192,7 @@
             }
         }
         &__burger {
+            cursor: pointer;
             display: block;
             position: relative;
             width: 20px;
@@ -239,6 +241,7 @@
             align-items: center;
             img {
                 margin-right: 15px;
+                cursor: pointer;
             }
             &__text {
                 font-size: 16px;
